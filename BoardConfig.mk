@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/samsung/a05m
+DEVICE_PATH := device/samsung/a22x
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BUILD_BROKEN_DUP_RULES := true
@@ -55,7 +55,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := r383902
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := a05m
+TARGET_BOOTLOADER_BOARD_NAME := a22X
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -131,7 +131,7 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6768
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.emmc
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -188,6 +188,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 #WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # Inherit the proprietary files
-include vendor/samsung/a05m/BoardConfigVendor.mk
+include vendor/samsung/a22x/BoardConfigVendor.mk
 
 
