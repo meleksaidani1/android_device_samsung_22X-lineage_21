@@ -14,7 +14,7 @@ ro.surface_flinger.primary_display_orientation=ORIENTATION_0
 
 # DRM
 drm.service.enabled=true
-ro.netflix.bsp_rev=MTK6769-33944-1
+ro.netflix.bsp_rev=MTK6833-32817-1
 
 # Media
 media.c2.dmabuf.padding=3072
