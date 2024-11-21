@@ -1,0 +1,1 @@
+# android_device_samsung_22X-lineage_21
