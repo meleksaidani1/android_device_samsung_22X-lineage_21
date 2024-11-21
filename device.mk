@@ -83,7 +83,7 @@ PRODUCT_CHARACTERISTICS := phone
 # Rootdir
 PRODUCT_PACKAGES += \
     fstab.enableswap \
-    fstab.mt6768 \
+    fstab.emmc \
     factory_init.connectivity.common.rc \
     factory_init.connectivity.rc \
     factory_init.project.rc \
@@ -94,8 +94,8 @@ PRODUCT_PACKAGES += \
     init.connectivity.common.rc \
     init.connectivity.rc \
     init.modem.rc \
-    init.mt6768.rc \
-    init.mt6768.usb.rc \
+    init.mt6833.rc \
+    init.mt6833.usb.rc \
     init.project.rc \
     init.sensor_1_0.rc \
     init_connectivity.rc \
@@ -106,11 +106,11 @@ PRODUCT_PACKAGES += \
     meta_init.rc \
     meta_init.vendor.rc \
     multi_init.rc \
-    init.recovery.mt6768.rc \
+    init.recovery.mt6833.rc \
     init.recovery.samsung.rc 
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768 
+    $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_RAMDISK)/fstab.emmc
 
 # SEC_RIL
 PRODUCT_COPY_FILES += \
